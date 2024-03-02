@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            background: #d3d3d3;
+        }
+        
+        .hamburger-menu{
+            width: 30px;
+            height:30px;
+            position: fixed;
+            right: 10px;
+            /* display: none;   */
+        }
+        
+        .nav-menu{
+            width:min(80vw,300px);
+            height: 100svh;
+            background-image:linear-gradient(to right,#00000000,#000000bd,#000000bd,#000000bd,#000000bd);
+            position: absolute;
+            
+            transition-duration: 0.6s ;
+            transition-timing-function: ease-out;
+            right: -10PX;
+            top: -10px;
+            transform: translateX(100%);
+            z-index: -1;
+            
+        
+        }
+        
+        .nav-menu ul{
+            margin: 20%;
+            line-height: 2;
+            list-style: none;
+        }
+        .nav-menu a{
+            text-decoration: none;
+            color: rgb(245, 241, 241);
+        }
+        
+        .top,.middle,.bottom
+        {
+            height: 5px;
+            width: 100%;
+            background: rgb(255, 255, 255);
+            margin-block: 4px;
+            border-radius: 100vw;
+            transition-duration: 0.6s ;
+            transition-timing-function: ease;
+            transform-origin: center;
+            z-index: 1;
+            
+        }
+        
+        
+        
+        
+        .change .top {
+            transform:translateY(9px) rotate(-45deg);   
+        }
+        .change .middle{
+            width: 10px;
+            
+            background: rgba(255, 0, 0, 0);
+        }
+        .change .bottom{
+            transform: translateY(-9px) rotate(45deg);   
+        }
+        
+        .change .nav-menu{
+            transform: translateX(0%);
+        }
+        
+        
+    </style>
+
+
+    <div class="hamburger-menu" onclick="menu(this)">
+        <div class="top"></div>
+        <div class="middle"></div>
+        <div class="bottom"></div>
+
+
+        <div class="nav-menu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

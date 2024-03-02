@@ -1,0 +1,7 @@
+/* Custom styles for carousel */
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background for captions */
+    color: #fff;
+    /* Text color for captions */
+}
