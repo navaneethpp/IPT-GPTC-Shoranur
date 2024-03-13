@@ -711,3 +711,11 @@ marquee {
     font-weight: 700;
     letter-spacing: 2px;
 }
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
