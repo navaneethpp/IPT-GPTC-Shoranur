@@ -64,6 +64,7 @@ header {
     
 }
 
+
 .nav_list  ul {
     list-style: none;
     
@@ -75,6 +76,11 @@ header {
     line-height: 1.5em;
     
 }
+.nav-list  a{
+    transition: 300ms;
+}
+
+
 
 
 .more-container{
@@ -86,6 +92,22 @@ header {
 }
 .more ul li ul{
     display: none;
+    width: 150px;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.678);
+    border-radius: 5px;
+    color: #000000;
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 10px 5px #00000038;
+    transform-origin: top;
+    transform: translateY(-2em);
+    right: 95%;
+    animation: drop 300ms ease forwards;
+}
+
+@keyframes drop {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 }
 .more ul li:hover{
     color: #000000;
@@ -97,12 +119,31 @@ header {
     margin-left: 10px;
 }
 .more ul li ul li a:hover{
-    color: #000000;
+    color: var(--clr-dark);
 }
 
 .nav-list a {
     text-decoration: none;
     color:var(--clr-dark);
+    text-shadow: none;
+}
+.nav-list ul li span:hover,
+.nav-list a:hover{
+     text-shadow: 
+    1px 1px  2px var(--clr-dark),
+    -1px -1px  2px var(--clr-dark),
+    1px -1px  2px var(--clr-dark),
+    -1px 1px  2px var(--clr-dark);
+    color: var(--clr-light);
+}
+.more ul li:hover,
+.more ul li ul li a:hover{
+    text-shadow: 
+    1px 1px  2px var(--clr-dark),
+    -1px -1px  2px var(--clr-dark),
+    1px -1px  2px var(--clr-dark),
+    -1px 1px  2px var(--clr-dark);
+    color: var(--clr-light);
 }
 
 
@@ -122,7 +163,8 @@ header {
 .nav-menu,
 .more{
     width:min(80vw,300px);
-    background: #00000050;
+    background: rgba(255, 255, 255, 0.678);
+    color: #000000;
     backdrop-filter: blur(5px);
     box-shadow: 0px 0px 10px 5px #00000092;
     position: absolute;
@@ -146,10 +188,6 @@ header {
 }
 
 
-.nav-menu a{
-    text-decoration: none;
-    color: rgb(245, 241, 241);
-}
 .nav-menu ul li ul{
     display: none;
 }
@@ -158,7 +196,7 @@ header {
 {
     height: 5px;
     width: 100%;
-    background: rgb(255, 255, 255);
+    background: var(--clr-dark);
     margin-block: 4px;
     border-radius: 100vw;
     transition-duration: 0.6s ;
