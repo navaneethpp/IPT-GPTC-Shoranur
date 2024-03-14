@@ -451,6 +451,55 @@ header {
 }
 
 
+/* css for image carousel */
+
+.carousel img{
+    width: calc(100% - 10px);
+    margin: 5px;
+    object-fit: contain;
+    object-position: center;
+
+}
+.carousel-btn{
+    font-size: 5em;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: thin;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    border: none;
+    height: 100%;
+    background: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 8;
+}
+.carousel-btn:hover{
+    background-color:rgba(0, 0, 0, 0);
+}
+.carousel {
+    width: 80%;
+    aspect-ratio: 16/9;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.6s ease-in;
+}
+
+.carousel-item {
+    width: 100%;
+    flex: 0 0 auto;
+
+
+}
+
+/* end of ---css for image carousel */
+
 .principal-container{
     width: 100%;
     position: relative;
