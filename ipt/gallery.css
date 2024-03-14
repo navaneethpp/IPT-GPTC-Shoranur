@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .gallery-container{
     width: 100%;
     display: grid;
@@ -8,6 +12,7 @@
 }
 
 .gallery-content{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,14 +27,29 @@
     border-radius: 5%;
     transition-duration: 300ms;
 }
+.gallery-content div{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(transparent,black);
+    padding: 2em;
+    color: white;
+    height: 50%;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition-duration: 300ms ;
+}
 .gallery-container .gallery-content:nth-child(7n+1){
     grid-column: span 2;
     grid-row: span 2;   
 }
 
 .gallery-container .gallery-content:hover img{
-    scale: 1.05;
-    transition-duration: 300ms ;
+    transform: scale(1.05);
+}
+.gallery-container .gallery-content:hover div{
+    transform: scaleY(1);
 }
 
 @media (max-width:1200px) {
