@@ -29,6 +29,7 @@ const scrollElement = Array.from(scrollContent.children);
 
 for (let i = 0; i < scrollElement.length; i++) {
     const element = scrollElement[i].cloneNode(true);
+    console.log(element)
     scrollContent.appendChild(element)
 }
 
