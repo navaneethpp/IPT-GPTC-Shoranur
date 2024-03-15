@@ -300,15 +300,16 @@ header {
     height: var(--height);
 
 
+    color: var(--clr-dark);
     right:0;
-    background: rgba(126, 175, 175, 0.555);
-    backdrop-filter: blur(5px);
+    background: var(--clr-light);
     box-shadow: 0 0px 5px 0px rgba(19, 19, 19, 0.76);
     border-radius: 5px;
     transform: translate(0,-50%);
     transition: 1s;
 
 }
+
 #notification .notification-content{
     height: 100%;
     margin-left: 10px;
@@ -333,14 +334,21 @@ header {
     line-height: 2;
     /* border: solid; */
     border-radius: 5px;
-    /* background-color: rgba(0, 0, 0, 0.3); */
-    box-shadow:inset 0 0px 5px 0px rgba(0, 0, 0, 0.5);
+    background-color:rgb(240, 240, 240);
+
     /* gap: 1em; */
 
+}
+#notification .notification-content ul li img{
+    width: 2em;
+    
 }
 .notification-scroller{
     height: fit-content;
     animation: scroll 10s linear infinite;
+}
+.notification-scroller:hover{
+    animation-play-state:paused ;
 }
 @keyframes scroll {
     to {transform: translate(0,calc(-50% - .5em));}
@@ -353,7 +361,7 @@ header {
     position: absolute;
     width: 40px;
     height: 40px;
-    background:  rgba(126, 175, 175, 0.555);
+    background:  var(--clr-dark);
     border-radius: 100vw;
     right: calc(var(--width) * -1);
     top: 50%;

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-NXUZ5lIcak/VrrMKCpV8IeIh27f0IUgU6rfUzCTfaU8fzUdUzujwoVg2Hdtk3jOi/mekWhcp0r1CVjxUO2zG5g==" crossorigin="anonymous" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: 200ms ease;
+        }
+        html{
+            background-color: black;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            background: 
+            radial-gradient(ellipse at 20% 20%, #3e196c 0%, transparent 90% ),
+            radial-gradient(ellipse at 60% 30%, #6ec3ea 0%, transparent 90% ),
+            radial-gradient(ellipse at 90% 20%, #871212 0%, transparent 90% ),
+            radial-gradient(ellipse at 100% 80%, #3f0c63 0%, transparent 90% ),
+            radial-gradient(ellipse at 20% 100%, #85286e 0%, transparent 90% );
+            background-blend-mode: multiply;
+            min-height: 100vh;
+            color: white;
+
+        }
+        .container{
+            width: min(90vw,1080px);
+            position: relative;
+            /* min-height: 100vh; */
+            /* border: solid; */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            
+            
+        }
+        h1{
+            width: 100%;
+            text-align: center;
+        }
+        .dev-container{
+            /* border: solid; */
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 2em;
+            padding:1em;
+        }
+        .dev{
+            width: 240px;
+            aspect-ratio: 4/5;
+            /* border:solid lime; */
+            border-radius: 5px;
+            background: #1c0031;
+            position: relative;
+            overflow: hidden;
+            
+
+        }
+
+        .dev:hover .content{
+            transform: translateY(0%);
+        }
+        img{
+            width: 100%;
+            aspect-ratio: 4/5;
+            object-fit: cover;
+            /* opacity: .5; */
+        }
+        .content{
+            position: absolute;
+            /* border: red solid; */
+            inset: 50% 0 0 0;
+            background: linear-gradient(transparent ,#000000);
+            transform:translateY(40%);
+            text-align: center;
+            padding: 1em;
+            line-height: 2;
+        }
+        .social{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            inset: 60% 0 0 0;
+            /* border: red solid; */
+        }
+
+        .social a {
+            margin-right: 10px;
+            color: #bd1717; /* Change the color as desired */
+            text-decoration: none;
+            font-size: 24px;
+        }
+        svg{
+
+            fill: #f0f0f0ee;
+            /* background-color: red; */
+        }
+        .github:hover svg{
+            fill: rgb(204, 0, 255);       
+        }
+        .linkedin:hover svg{
+            fill: #0A66C2;           
+        }
+        .instagram:hover svg{
+            fill: #E4405F ;           
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="dev-container">
+            <h1>Developers</h1>
+            <div class="dev">
+                <img src="img/w-navaneeth.jpg" alt="">
+                <div class="content">
+                    <h3>NAVANEETH</h3>
+                    <h5>WEB DEVELOPER</h5>
+                    <div class="social">
+                        <a href="https://github.com/navaneethpp" target="_blank" class="github">
+                            <svg class="github" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M12 0C5.4 0 0 5.4 0 12c0 5.3 3.4 9.8 8.1 11.4.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.5-1.3-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 1.6 2.6 1.2 3.3.9.1-.7.4-1.2.8-1.5-3-.3-6.2-1.5-6.2-6.8 0-1.5.5-2.7 1.1-3.7-.1-.3-.5-1.8.1-3.7 0 0 1.2-.4 3.9 1.4 1.1-.3 2.2-.4 3.3-.4s2.2.1 3.3.4c2.7-1.8 3.9-1.4 3.9-1.4.6 1.9.2 3.4.1 3.7.7 1 1.1 2.2 1.1 3.7 0 5.3-3.2 6.5-6.2 6.8.5.4.9 1.2.9 2.4v3.6c0 .3.2.7.8.6C20.6 21.7 24 17.2 24 12c0-6.6-5.4-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/navaneethpp/"  target="_blank" class="linkedin">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 50 50">
+                                <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/navaneeth_ktgact/" target="_blank"  class="instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 48 48">
+                                <path d="M 16.5 5 C 10.16639 5 5 10.16639 5 16.5 L 5 31.5 C 5 37.832757 10.166209 43 16.5 43 L 31.5 43 C 37.832938 43 43 37.832938 43 31.5 L 43 16.5 C 43 10.166209 37.832757 5 31.5 5 L 16.5 5 z M 16.5 8 L 31.5 8 C 36.211243 8 40 11.787791 40 16.5 L 40 31.5 C 40 36.211062 36.211062 40 31.5 40 L 16.5 40 C 11.787791 40 8 36.211243 8 31.5 L 8 16.5 C 8 11.78761 11.78761 8 16.5 8 z M 34 12 C 32.895 12 32 12.895 32 14 C 32 15.105 32.895 16 34 16 C 35.105 16 36 15.105 36 14 C 36 12.895 35.105 12 34 12 z M 24 14 C 18.495178 14 14 18.495178 14 24 C 14 29.504822 18.495178 34 24 34 C 29.504822 34 34 29.504822 34 24 C 34 18.495178 29.504822 14 24 14 z M 24 17 C 27.883178 17 31 20.116822 31 24 C 31 27.883178 27.883178 31 24 31 C 20.116822 31 17 27.883178 17 24 C 17 20.116822 20.116822 17 24 17 z"></path>
+                            </svg>
+                              
+                        </a>    
+                    </div>
+                </div>
+            </div>
+            <div class="dev">
+                <img src="img/w-adhi.jpg" alt="">
+                <div class="content">
+                    <h3>ADITHYAN</h3>
+                    <h5>WEB DEVELOPER</h5>
+                    <div class="social">
+                        <a href="https://github.com/d-joz"  target="_blank" class="github">
+                            <svg class="github" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M12 0C5.4 0 0 5.4 0 12c0 5.3 3.4 9.8 8.1 11.4.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.5-1.3-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 1.6 2.6 1.2 3.3.9.1-.7.4-1.2.8-1.5-3-.3-6.2-1.5-6.2-6.8 0-1.5.5-2.7 1.1-3.7-.1-.3-.5-1.8.1-3.7 0 0 1.2-.4 3.9 1.4 1.1-.3 2.2-.4 3.3-.4s2.2.1 3.3.4c2.7-1.8 3.9-1.4 3.9-1.4.6 1.9.2 3.4.1 3.7.7 1 1.1 2.2 1.1 3.7 0 5.3-3.2 6.5-6.2 6.8.5.4.9 1.2.9 2.4v3.6c0 .3.2.7.8.6C20.6 21.7 24 17.2 24 12c0-6.6-5.4-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/adithyan-k-6aa7512b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"  class="linkedin">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 50 50">
+                                <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/ad.h_i?igsh=cmQxeW53bWdtZHRr" target="_blank"  class="instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 48 48">
+                                <path d="M 16.5 5 C 10.16639 5 5 10.16639 5 16.5 L 5 31.5 C 5 37.832757 10.166209 43 16.5 43 L 31.5 43 C 37.832938 43 43 37.832938 43 31.5 L 43 16.5 C 43 10.166209 37.832757 5 31.5 5 L 16.5 5 z M 16.5 8 L 31.5 8 C 36.211243 8 40 11.787791 40 16.5 L 40 31.5 C 40 36.211062 36.211062 40 31.5 40 L 16.5 40 C 11.787791 40 8 36.211243 8 31.5 L 8 16.5 C 8 11.78761 11.78761 8 16.5 8 z M 34 12 C 32.895 12 32 12.895 32 14 C 32 15.105 32.895 16 34 16 C 35.105 16 36 15.105 36 14 C 36 12.895 35.105 12 34 12 z M 24 14 C 18.495178 14 14 18.495178 14 24 C 14 29.504822 18.495178 34 24 34 C 29.504822 34 34 29.504822 34 24 C 34 18.495178 29.504822 14 24 14 z M 24 17 C 27.883178 17 31 20.116822 31 24 C 31 27.883178 27.883178 31 24 31 C 20.116822 31 17 27.883178 17 24 C 17 20.116822 20.116822 17 24 17 z"></path>
+                            </svg>
+                              
+                        </a>    
+                    </div>
+                </div>
+            </div>
+            <div class="dev">
+                <img src="img/w-prnav" alt="">
+                <div class="content">
+                    <h3>PRANAV</h3>
+                    <h5>WEB DEVELOPER</h5>
+                    <div class="social">
+                        <a href=""  target="_blank" class="github">
+                            <svg class="github" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M12 0C5.4 0 0 5.4 0 12c0 5.3 3.4 9.8 8.1 11.4.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.5-1.3-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 1.6 2.6 1.2 3.3.9.1-.7.4-1.2.8-1.5-3-.3-6.2-1.5-6.2-6.8 0-1.5.5-2.7 1.1-3.7-.1-.3-.5-1.8.1-3.7 0 0 1.2-.4 3.9 1.4 1.1-.3 2.2-.4 3.3-.4s2.2.1 3.3.4c2.7-1.8 3.9-1.4 3.9-1.4.6 1.9.2 3.4.1 3.7.7 1 1.1 2.2 1.1 3.7 0 5.3-3.2 6.5-6.2 6.8.5.4.9 1.2.9 2.4v3.6c0 .3.2.7.8.6C20.6 21.7 24 17.2 24 12c0-6.6-5.4-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href=""  target="_blank" class="linkedin">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 50 50">
+                                <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
+                            </svg>
+                        </a>
+                        <a href=""  target="_blank" class="instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 48 48">
+                                <path d="M 16.5 5 C 10.16639 5 5 10.16639 5 16.5 L 5 31.5 C 5 37.832757 10.166209 43 16.5 43 L 31.5 43 C 37.832938 43 43 37.832938 43 31.5 L 43 16.5 C 43 10.166209 37.832757 5 31.5 5 L 16.5 5 z M 16.5 8 L 31.5 8 C 36.211243 8 40 11.787791 40 16.5 L 40 31.5 C 40 36.211062 36.211062 40 31.5 40 L 16.5 40 C 11.787791 40 8 36.211243 8 31.5 L 8 16.5 C 8 11.78761 11.78761 8 16.5 8 z M 34 12 C 32.895 12 32 12.895 32 14 C 32 15.105 32.895 16 34 16 C 35.105 16 36 15.105 36 14 C 36 12.895 35.105 12 34 12 z M 24 14 C 18.495178 14 14 18.495178 14 24 C 14 29.504822 18.495178 34 24 34 C 29.504822 34 34 29.504822 34 24 C 34 18.495178 29.504822 14 24 14 z M 24 17 C 27.883178 17 31 20.116822 31 24 C 31 27.883178 27.883178 31 24 31 C 20.116822 31 17 27.883178 17 24 C 17 20.116822 20.116822 17 24 17 z"></path>
+                            </svg>
+                              
+                        </a>    
+                    </div>
+                </div>
+            </div>
+            <div class="dev">
+                <img src="img/w-prajosh" alt="">
+                <div class="content">
+                    <h3>PRAJOSH</h3>
+                    <h5>WEB DEVELOPER</h5>
+                    <div class="social">
+                        <a href=""  target="_blank" class="github">
+                            <svg class="github" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M12 0C5.4 0 0 5.4 0 12c0 5.3 3.4 9.8 8.1 11.4.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.5-1.3-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 1.6 2.6 1.2 3.3.9.1-.7.4-1.2.8-1.5-3-.3-6.2-1.5-6.2-6.8 0-1.5.5-2.7 1.1-3.7-.1-.3-.5-1.8.1-3.7 0 0 1.2-.4 3.9 1.4 1.1-.3 2.2-.4 3.3-.4s2.2.1 3.3.4c2.7-1.8 3.9-1.4 3.9-1.4.6 1.9.2 3.4.1 3.7.7 1 1.1 2.2 1.1 3.7 0 5.3-3.2 6.5-6.2 6.8.5.4.9 1.2.9 2.4v3.6c0 .3.2.7.8.6C20.6 21.7 24 17.2 24 12c0-6.6-5.4-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="" target="_blank"  class="linkedin">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 50 50">
+                                <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
+                            </svg>
+                        </a>
+                        <a href="" target="_blank"  class="instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 48 48">
+                                <path d="M 16.5 5 C 10.16639 5 5 10.16639 5 16.5 L 5 31.5 C 5 37.832757 10.166209 43 16.5 43 L 31.5 43 C 37.832938 43 43 37.832938 43 31.5 L 43 16.5 C 43 10.166209 37.832757 5 31.5 5 L 16.5 5 z M 16.5 8 L 31.5 8 C 36.211243 8 40 11.787791 40 16.5 L 40 31.5 C 40 36.211062 36.211062 40 31.5 40 L 16.5 40 C 11.787791 40 8 36.211243 8 31.5 L 8 16.5 C 8 11.78761 11.78761 8 16.5 8 z M 34 12 C 32.895 12 32 12.895 32 14 C 32 15.105 32.895 16 34 16 C 35.105 16 36 15.105 36 14 C 36 12.895 35.105 12 34 12 z M 24 14 C 18.495178 14 14 18.495178 14 24 C 14 29.504822 18.495178 34 24 34 C 29.504822 34 34 29.504822 34 24 C 34 18.495178 29.504822 14 24 14 z M 24 17 C 27.883178 17 31 20.116822 31 24 C 31 27.883178 27.883178 31 24 31 C 20.116822 31 17 27.883178 17 24 C 17 20.116822 20.116822 17 24 17 z"></path>
+                            </svg>
+                              
+                        </a>    
+                    </div>
+                </div>
+            </div>
+            <div class="dev">
+                <img src="w-sanand" alt="">
+                <div class="content">
+                    <h3>SANAND</h3>
+                    <h5>WEB DEVELOPER</h5>
+                    <div class="social">
+                        <a href="" target="_blank" class="github">
+                            <svg class="github" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M12 0C5.4 0 0 5.4 0 12c0 5.3 3.4 9.8 8.1 11.4.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.5-1.3-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 1.6 2.6 1.2 3.3.9.1-.7.4-1.2.8-1.5-3-.3-6.2-1.5-6.2-6.8 0-1.5.5-2.7 1.1-3.7-.1-.3-.5-1.8.1-3.7 0 0 1.2-.4 3.9 1.4 1.1-.3 2.2-.4 3.3-.4s2.2.1 3.3.4c2.7-1.8 3.9-1.4 3.9-1.4.6 1.9.2 3.4.1 3.7.7 1 1.1 2.2 1.1 3.7 0 5.3-3.2 6.5-6.2 6.8.5.4.9 1.2.9 2.4v3.6c0 .3.2.7.8.6C20.6 21.7 24 17.2 24 12c0-6.6-5.4-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="" target="_blank"  class="linkedin">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 50 50">
+                                <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
+                            </svg>
+                        </a>
+                        <a href="" target="_blank"  class="instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 48 48">
+                                <path d="M 16.5 5 C 10.16639 5 5 10.16639 5 16.5 L 5 31.5 C 5 37.832757 10.166209 43 16.5 43 L 31.5 43 C 37.832938 43 43 37.832938 43 31.5 L 43 16.5 C 43 10.166209 37.832757 5 31.5 5 L 16.5 5 z M 16.5 8 L 31.5 8 C 36.211243 8 40 11.787791 40 16.5 L 40 31.5 C 40 36.211062 36.211062 40 31.5 40 L 16.5 40 C 11.787791 40 8 36.211243 8 31.5 L 8 16.5 C 8 11.78761 11.78761 8 16.5 8 z M 34 12 C 32.895 12 32 12.895 32 14 C 32 15.105 32.895 16 34 16 C 35.105 16 36 15.105 36 14 C 36 12.895 35.105 12 34 12 z M 24 14 C 18.495178 14 14 18.495178 14 24 C 14 29.504822 18.495178 34 24 34 C 29.504822 34 34 29.504822 34 24 C 34 18.495178 29.504822 14 24 14 z M 24 17 C 27.883178 17 31 20.116822 31 24 C 31 27.883178 27.883178 31 24 31 C 20.116822 31 17 27.883178 17 24 C 17 20.116822 20.116822 17 24 17 z"></path>
+                            </svg>
+                              
+                        </a>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
