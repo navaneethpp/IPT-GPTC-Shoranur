@@ -1,9 +1,0 @@
-.fix {
-    background-image: url("img_tree.gif");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-.profile-container{
-    border: solid red;
-    display: flex;
-}
