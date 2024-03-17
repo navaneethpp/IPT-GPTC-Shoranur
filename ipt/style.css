@@ -267,7 +267,8 @@ header {
 /* Additional styling for the h1 tag */
 .main-heading {
     width: 60vw;
-    font-size: 4em; /* Larger font size */
+    /* font-size: 4em */
+    font-size: 6vw; /* Larger font size */
     color: #ffffff; /* Text color */
     /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); Text shadow */
     font-family: 'Russo One', 'Arial', sans-serif;
